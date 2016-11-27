@@ -3437,6 +3437,9 @@ Operation.prototype.getType = function (param) {
     }
   } else if (type === 'file') {
     str = 'file';
+  // HS specific
+  } else if (type === 'object') {
+    str = 'JSON';
   }
 
   if (param.$ref) {
